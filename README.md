@@ -29,6 +29,8 @@ fit.
 
 Good luck with the challenge!
 
+---
+
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -36,7 +38,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Clone the repo
 
 ```bash
-git clone
+git clone git@github.com:emateu/beer-ecommerce.git
 ```
 
 2. Install the dependencies
