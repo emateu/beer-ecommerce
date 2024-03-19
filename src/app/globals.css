@@ -7,9 +7,9 @@ body {
 }
 
 .text-link {
-  @apply text-beer-orange hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-sm focus:ring-offset-2;
+  @apply text-beer-orange hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-beer-orange/50 rounded-sm focus:ring-offset-2;
 }
 
 .focus-style {
-  @apply focus:outline-none focus:ring-2 focus:ring-blue-400 focus:rounded-sm;
+  @apply focus:outline-none focus:ring-2 focus:ring-beer-orange/50;
 }
