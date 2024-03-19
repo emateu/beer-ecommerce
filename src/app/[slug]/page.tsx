@@ -17,9 +17,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   return {
     title: getMetaTitle(product?.brand),
     description: product?.information,
-    openGraph: {
-      images: [product?.image ?? ''],
-    },
+    openGraph: product?.image
+      ? {
+          images: [getNextImageUrl(product.image)],
+        }
+      : undefined,
     icons: {
       icon: FAVICON_PATH,
       shortcut: FAVICON_PATH,
@@ -30,3 +32,6 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 export default async function Page(props: Props) {
   return <ProductDetailsPage slug={props.params.slug} />
 }
+
+const getNextImageUrl = (path: string) =>
+  `https://beer-ecommerce.vercel.app/_next/image?url=${encodeURIComponent(path)}&w=640&q=75`
