@@ -1,5 +1,3 @@
-import { Product } from '~/app/types'
-
 export default [
   {
     id: 127,
@@ -71,7 +69,7 @@ export default [
   {
     id: 841,
     brand: 'Lagunitas IPA',
-    image: '/products/lagunitas.jpeg',
+    image: '/products/lagunitas.jpg',
     style: 'Ale',
     substyle: 'Indian Pale Ale',
     abv: '6.2%',
@@ -85,4 +83,4 @@ export default [
       },
     ],
   },
-] as Product[]
+]

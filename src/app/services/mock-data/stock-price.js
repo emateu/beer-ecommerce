@@ -1,5 +1,3 @@
-import { StockPrice } from '~/app/types'
-
 export default {
   10167: {
     stock: 130,
@@ -33,4 +31,4 @@ export default {
     stock: 607,
     price: 3518,
   },
-} as Record<number | string, StockPrice>
+}
