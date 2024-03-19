@@ -7,5 +7,5 @@ export function getFormattedPrice(params: { amount: number; currency?: string })
     currency: currency || DEFAULT_CURRENCY_CODE,
   })
 
-  return formatter.format(amount)
+  return formatter.format(amount / 100) // amount is in cents
 }
